@@ -15,14 +15,15 @@
           <a class="navbar-brand" href="#">Weather Dashboard</a>
         </div>
       </nav>
-        
-  
+      
 
 
     <main class="container-fluid">
       <div class="row">
         <aside class="col-sm-3">
           <form class="row" id="search-form">
+              <h4>Search for a City</h4>
+              
            
             <div class="form-group col-9">
               
@@ -31,9 +32,21 @@
            
             <button type="submit" class="btn btn-primary col-3">Search</button>
           </form>
+          <div class="card" style="width: 17rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+          </div>    
         </aside>
-        <section class="col-sm-9">
-            My search results will go here.
+
+
+        <section class="col-sm-9" id="result-section">
+            <h3 id="cityName"></h3>
+            <p id="tempLabel"></p>
+            <p id="humidityLabel"></p>
+            <p id="windSpeedLabel"></p>
         </section>
       </div>
     </main>
@@ -61,6 +74,10 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
     <script src="assets/script.js"></script>
   </body>
 </html>
