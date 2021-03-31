@@ -50,6 +50,7 @@ searchForm.on("submit", function(event){
     });
 });
 
+// convert date to unix attempt
 
 function convertDate(currentDate) {
     return moment.unix(currentDate).format('MM/DD/YYYY');
